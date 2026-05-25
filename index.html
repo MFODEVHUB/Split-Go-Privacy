@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — Split&amp;Go</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+      line-height: 1.7;
+    }
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+      border-bottom: 3px solid #ff6b00;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header .app-name { color: #ff6b00; }
+    header p  { margin-top: .4rem; opacity: .75; font-size: .9rem; }
+    main {
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem 4rem;
+    }
+    section { margin-bottom: 2.2rem; }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #c2400c;
+      margin-bottom: .6rem;
+      padding-bottom: .3rem;
+      border-bottom: 2px solid #ffedd5;
+    }
+    p  { margin-bottom: .8rem; }
+    ul { margin: .4rem 0 .8rem 1.4rem; }
+    li { margin-bottom: .3rem; }
+    a  { color: #c2400c; }
+    .highlight {
+      background: #ffedd5;
+      border-left: 4px solid #ff6b00;
+      padding: .75rem 1rem;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: .8rem;
+    }
+    footer {
+      text-align: center;
+      font-size: .8rem;
+      color: #868e96;
+      padding: 1.5rem;
+      border-top: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Politique de confidentialité</h1>
+  <p>Application <span class="app-name">Split&amp;Go</span> &mdash; dernière mise à jour : 25 mai 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Présentation</h2>
+    <p>
+      Split&amp;Go est une application Android de gestion de dépenses partagées, éditée par un
+      développeur indépendant (ci-après « nous » ou « l'éditeur »). La présente politique décrit
+      quelles données sont collectées, comment elles sont utilisées et quels droits vous disposez
+      à leur égard.
+    </p>
+    <div class="highlight">
+      <strong>Principe fondamental :</strong> Split&amp;Go fonctionne entièrement offline.
+      L'application ne collecte et ne transmet aucune donnée personnelle à nos serveurs.
+      Toutes vos données restent sur votre appareil.
+    </div>
+    <p>Contact : <a href="mailto:mfodev@free.fr">mfodev@free.fr</a></p>
+  </section>
+
+  <section>
+    <h2>2. Données stockées localement sur votre appareil</h2>
+    <p>
+      Split&amp;Go enregistre certaines données <strong>exclusivement sur votre appareil</strong>
+      (base de données Room/SQLite et DataStore). Ces données ne sont jamais transmises à nos
+      serveurs ni à des tiers. Elles comprennent :
+    </p>
+    <ul>
+      <li><strong>Événements</strong> : nom et date de création de chaque événement créé</li>
+      <li><strong>Participants</strong> : prénoms des participants à chaque événement</li>
+      <li><strong>Dépenses</strong> : titre, montant, payeur et bénéficiaires de chaque dépense</li>
+      <li><strong>Méthodes de paiement</strong> : coordonnées de paiement saisies dans les
+          paramètres (IBAN, PayPal, Lydia, Revolut, Wero) — stockées localement uniquement</li>
+      <li><strong>Préférences de l'application</strong> : palette de couleurs, ton de message,
+          état Premium</li>
+    </ul>
+    <p>
+      Ces données sont supprimées si vous désinstallez l'application ou si vous supprimez
+      manuellement les événements concernés.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Caméra et scan de ticket</h2>
+    <div class="highlight">
+      La reconnaissance de texte sur les tickets de caisse est effectuée entièrement sur votre
+      appareil grâce à Google ML Kit (mode offline). Aucune image ni donnée extraite n'est
+      transmise à l'extérieur de votre appareil.
+    </div>
+    <p>La permission caméra est utilisée exclusivement pour :</p>
+    <ul>
+      <li><strong>Photographier un ticket de caisse</strong> afin d'en extraire automatiquement
+          le titre et le montant d'une dépense</li>
+    </ul>
+    <p>
+      La photo prise est stockée temporairement dans le cache de l'application le temps du
+      traitement, puis n'est plus utilisée. Elle n'est jamais envoyée à un serveur externe.
+    </p>
+    <p>
+      La permission caméra est demandée au moment où vous utilisez la fonctionnalité de scan
+      pour la première fois. Vous pouvez refuser ou révoquer cette permission à tout moment
+      depuis les paramètres Android sans affecter les autres fonctionnalités de l'application.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. Publicité — Google AdMob</h2>
+    <p>
+      L'application intègre le SDK Google AdMob afin d'afficher des publicités récompensées.
+      AdMob peut collecter et utiliser les données suivantes conformément à la
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de
+      confidentialité de Google</a> :
+    </p>
+    <ul>
+      <li>Identifiant publicitaire Android (AAID)</li>
+      <li>Adresse IP (pour la localisation approximative)</li>
+      <li>Informations sur l'appareil (modèle, version Android, langue)</li>
+      <li>Données d'interaction avec les publicités (clics, impressions)</li>
+    </ul>
+    <p>
+      Conformément au RGPD, un bandeau de consentement vous est présenté au premier lancement.
+      Vous pouvez modifier votre choix à tout moment depuis les
+      <strong>Paramètres → Publicités</strong>.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Achats in-app — Google Play Billing</h2>
+    <p>
+      L'application propose des dons et un abonnement mensuel via Google Play Billing.
+      Les transactions sont entièrement gérées par Google Play. Nous ne recevons ni ne
+      stockons aucune information de paiement (coordonnées bancaires, numéro de carte…).
+    </p>
+    <p>
+      Pour consulter vos achats ou gérer votre abonnement, rendez-vous dans
+      <strong>Google Play → Abonnements et achats</strong>.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Données non collectées</h2>
+    <p>Split&amp;Go <strong>ne collecte pas</strong> :</p>
+    <ul>
+      <li>Votre nom, adresse e-mail ou toute information d'identification personnelle</li>
+      <li>Votre position GPS ou localisation géographique</li>
+      <li>Des données de navigation web</li>
+      <li>Des données de télémétrie ou d'utilisation envoyées à nos serveurs</li>
+    </ul>
+    <p>L'application ne dispose d'aucun compte utilisateur et ne nécessite aucune inscription.</p>
+  </section>
+
+  <section>
+    <h2>7. Autorisations Android utilisées</h2>
+    <ul>
+      <li><strong>INTERNET</strong> — chargement des publicités AdMob et traitement des
+          achats Google Play</li>
+      <li><strong>CAMERA</strong> — scan de ticket de caisse via ML Kit (usage optionnel,
+          demandé au moment de la première utilisation)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Sécurité des communications</h2>
+    <p>
+      Toutes les communications réseau de l'application (AdMob, consentement RGPD, Google Play
+      Billing) s'effectuent exclusivement via <strong>HTTPS</strong>. Le trafic HTTP non
+      chiffré est interdit par la configuration de sécurité réseau de l'application.
+    </p>
+    <p>
+      Le cœur de l'application (gestion des événements, calcul des dettes, scan de ticket)
+      fonctionne entièrement sans accès réseau.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Partage des données avec des tiers</h2>
+    <p>
+      Nous ne vendons, ne louons et ne partageons vos données personnelles avec aucun tiers,
+      à l'exception des données publicitaires transmises à Google AdMob (section 4) et des
+      données de transaction gérées par Google Play Billing (section 5).
+    </p>
+  </section>
+
+  <section>
+    <h2>10. Vos droits (RGPD)</h2>
+    <p>
+      Si vous résidez dans l'Espace économique européen, vous disposez des droits suivants
+      concernant vos données personnelles traitées par Google AdMob :
+    </p>
+    <ul>
+      <li>Droit d'accès, de rectification et d'effacement</li>
+      <li>Droit d'opposition au traitement à des fins publicitaires</li>
+      <li>Droit à la portabilité des données</li>
+      <li>Droit de retirer votre consentement à tout moment</li>
+    </ul>
+    <p>
+      Pour exercer ces droits concernant les données Google, rendez-vous sur
+      <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">
+      myaccount.google.com/data-and-privacy</a>.
+      Pour toute demande relative à l'application, contactez-nous à
+      <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Conservation des données</h2>
+    <p>
+      Les données locales (événements, participants, dépenses, préférences) sont conservées sur
+      votre appareil jusqu'à ce que vous les supprimiez manuellement ou que vous désinstalliez
+      l'application. Aucune copie n'est conservée par l'éditeur.
+    </p>
+  </section>
+
+  <section>
+    <h2>12. Enfants</h2>
+    <p>
+      Split&amp;Go n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas
+      sciemment de données personnelles concernant des mineurs.
+    </p>
+  </section>
+
+  <section>
+    <h2>13. Modifications de cette politique</h2>
+    <p>
+      Nous nous réservons le droit de mettre à jour cette politique de confidentialité. En cas de
+      modification substantielle, la date de « dernière mise à jour » en haut de cette page sera
+      actualisée. Nous vous encourageons à consulter cette page périodiquement.
+    </p>
+  </section>
+
+  <section>
+    <h2>14. Contact</h2>
+    <p>
+      Pour toute question relative à cette politique de confidentialité :
+      <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Split&amp;Go &mdash; Tous droits réservés
+</footer>
+
+</body>
+</html>
