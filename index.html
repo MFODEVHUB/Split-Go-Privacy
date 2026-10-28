@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Politique de confidentialité — Split&amp;Go</title>
+  <title>Politique de confidentialité / Privacy Policy — Split&amp;Go</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -54,215 +54,162 @@
       padding: 1.5rem;
       border-top: 1px solid #dee2e6;
     }
+      .lang { text-align: center; margin: 1rem 0 0; font-size: .9rem; }
+    .lang a { margin: 0 .5rem; color: #ffedd5; }
+    main + main { border-top: 3px solid #ffedd5; padding-top: 2rem; margin-top: 0; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Politique de confidentialité</h1>
-  <p>Application <span class="app-name">Split&amp;Go</span> &mdash; dernière mise à jour : 25 mai 2026</p>
+  <h1>Politique de confidentialité / Privacy Policy</h1>
+  <p>Application <span class="app-name">Split&amp;Go</span> &mdash; dernière mise à jour / last updated : 28 octobre 2026 / October 28, 2026</p>
+  <p class="lang"><a href="#fr">Français</a> | <a href="#en">English</a></p>
 </header>
 
-<main>
-
+<main id="fr" lang="fr">
   <section>
     <h2>1. Présentation</h2>
-    <p>
-      Split&amp;Go est une application Android de gestion de dépenses partagées, éditée par un
-      développeur indépendant (ci-après « nous » ou « l'éditeur »). La présente politique décrit
-      quelles données sont collectées, comment elles sont utilisées et quels droits vous disposez
-      à leur égard.
-    </p>
-    <div class="highlight">
-      <strong>Principe fondamental :</strong> Split&amp;Go fonctionne entièrement offline.
-      L'application ne collecte et ne transmet aucune donnée personnelle à nos serveurs.
-      Toutes vos données restent sur votre appareil.
-    </div>
+    <p>Split&amp;Go est une application Android de gestion de dépenses partagées, éditée par un développeur indépendant (« l'éditeur »). Cette politique décrit les données concernées, leur usage et vos droits.</p>
+    <div class="highlight"><strong>Principe fondamental :</strong> vos événements, participants et dépenses restent <strong>100 % sur votre appareil</strong>. L'application n'a ni compte, ni serveur à nous, et ne nous envoie jamais ces données.</div>
     <p>Contact : <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a></p>
   </section>
-
   <section>
-    <h2>2. Données stockées localement sur votre appareil</h2>
-    <p>
-      Split&amp;Go enregistre certaines données <strong>exclusivement sur votre appareil</strong>
-      (base de données Room/SQLite et DataStore). Ces données ne sont jamais transmises à nos
-      serveurs ni à des tiers. Elles comprennent :
-    </p>
+    <h2>2. Données stockées sur votre appareil</h2>
+    <p>Stockées localement (base Room/SQLite, DataStore), jamais transmises :</p>
     <ul>
-      <li><strong>Événements</strong> : nom et date de création de chaque événement créé</li>
-      <li><strong>Participants</strong> : prénoms des participants à chaque événement</li>
-      <li><strong>Dépenses</strong> : titre, montant, payeur et bénéficiaires de chaque dépense</li>
-      <li><strong>Méthodes de paiement</strong> : coordonnées de paiement saisies dans les
-          paramètres (IBAN, PayPal, Lydia, Revolut, Wero) — stockées localement uniquement</li>
-      <li><strong>Préférences de l'application</strong> : palette de couleurs, ton de message,
-          état Premium</li>
+      <li><strong>Événements</strong> : nom, date, devise</li>
+      <li><strong>Participants</strong> : prénoms</li>
+      <li><strong>Dépenses</strong> : titre, montant, payeur, bénéficiaires, éventuelle photo de ticket</li>
+      <li><strong>Moyens de paiement</strong> saisis dans les réglages (IBAN, PayPal, Lydia, Revolut, Wero…) : conservés localement, insérés dans les messages que vous choisissez de partager</li>
+      <li><strong>Préférences</strong> : palette, ton des messages, déblocages</li>
     </ul>
-    <p>
-      Ces données sont supprimées si vous désinstallez l'application ou si vous supprimez
-      manuellement les événements concernés.
-    </p>
+    <p>Ces données disparaissent si vous désinstallez l'application ou supprimez les éléments concernés. L'éditeur n'en détient aucune copie.</p>
   </section>
-
   <section>
-    <h2>3. Caméra et scan de ticket</h2>
-    <div class="highlight">
-      La reconnaissance de texte sur les tickets de caisse est effectuée entièrement sur votre
-      appareil grâce à Google ML Kit (mode offline). Aucune image ni donnée extraite n'est
-      transmise à l'extérieur de votre appareil.
-    </div>
-    <p>La permission caméra est utilisée exclusivement pour :</p>
+    <h2>3. Caméra, photos de tickets et reconnaissance de texte</h2>
+    <div class="highlight">La lecture des tickets est faite <strong>sur votre appareil</strong> par Google ML Kit (modèle embarqué dans l'application). Aucune image ni texte reconnu n'est envoyé.</div>
+    <p>La permission caméra sert uniquement à photographier un ticket (vous pouvez aussi importer une image de la galerie). La photo est d'abord placée dans le cache de l'application ; si vous enregistrez la dépense, elle est copiée dans le stockage interne de l'application (non accessible aux autres applications) et supprimée avec la dépense. Vous pouvez refuser ou retirer la permission à tout moment depuis les réglages Android.</p>
+  </section>
+  <section>
+    <h2>4. Rapports de plantage — Firebase Crashlytics</h2>
+    <p>En cas de plantage, Firebase Crashlytics (Google) reçoit un rapport technique : trace du plantage, modèle d'appareil, version d'Android et de l'application, état de la mémoire, identifiant d'installation. Aucune donnée saisie (événements, noms, montants) n'y figure. Vous pouvez désactiver cet envoi dans les réglages de l'application.</p>
+  </section>
+  <section>
+    <h2>5. Mesure d'audience — Firebase Analytics</h2>
+    <p>L'application peut envoyer des statistiques d'usage anonymes à Firebase Analytics (écrans ouverts, fonctionnalités utilisées, paliers de nombre de participants, choix de palette ou de ton, issue d'un scan). <strong>Aucune donnée que vous saisissez</strong> (noms, montants, titres, texte des tickets) n'est transmise. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, la mesure n'est activée qu'avec votre consentement ; vous pouvez la désactiver à tout moment dans les réglages.</p>
+  </section>
+  <section>
+    <h2>6. Publicité — Google AdMob et consentement</h2>
+    <p>Une bannière et des publicités récompensées (optionnelles, en échange de déblocages) sont affichées via Google AdMob, qui peut traiter l'identifiant publicitaire Android, l'adresse IP, des informations sur l'appareil et des données d'interaction avec les annonces, selon la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité de Google</a>.</p>
+    <p>Dans l'EEE, au Royaume-Uni et en Suisse, un message de consentement (Google User Messaging Platform) vous est présenté au premier lancement ; vous pouvez modifier votre choix à tout moment depuis la page <strong>Soutien</strong> ou les réglages. Les abonnés Premium ne voient pas de publicité.</p>
+  </section>
+  <section>
+    <h2>7. Achats — Google Play Billing</h2>
+    <p>Les dons et l'abonnement mensuel sont traités par Google Play. Nous ne recevons ni ne stockons aucune donnée de paiement ; l'application ne connaît que l'état de votre achat. Gérez vos achats dans <strong>Google Play → Paiements et abonnements</strong>.</p>
+  </section>
+  <section>
+    <h2>8. « Nous écrire » — envoi d'un message</h2>
+    <p>Si vous utilisez le formulaire <strong>Nous écrire</strong> des réglages, les informations suivantes sont envoyées à notre base hébergée chez Supabase : le message que vous rédigez, la version de l'application, la version d'Android, le modèle de l'appareil et la langue. Aucun nom, e-mail ou identifiant n'est joint ; n'écrivez pas de données personnelles dans votre message si vous ne le souhaitez pas. Ces messages servent uniquement à répondre et à améliorer l'application ; pour demander leur suppression, écrivez à <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>. Rien n'est envoyé sans que vous ayez appuyé sur « Envoyer ».</p>
+  </section>
+  <section>
+    <h2>9. Autorisations Android</h2>
     <ul>
-      <li><strong>Photographier un ticket de caisse</strong> afin d'en extraire automatiquement
-          le titre et le montant d'une dépense</li>
+      <li><strong>INTERNET</strong> et <strong>ACCESS_NETWORK_STATE</strong> — publicités, achats, rapports de plantage, statistiques, formulaire « Nous écrire »</li>
+      <li><strong>CAMERA</strong> — photographier un ticket (optionnel, demandée à la première utilisation)</li>
     </ul>
-    <p>
-      La photo prise est stockée temporairement dans le cache de l'application le temps du
-      traitement, puis n'est plus utilisée. Elle n'est jamais envoyée à un serveur externe.
-    </p>
-    <p>
-      La permission caméra est demandée au moment où vous utilisez la fonctionnalité de scan
-      pour la première fois. Vous pouvez refuser ou révoquer cette permission à tout moment
-      depuis les paramètres Android sans affecter les autres fonctionnalités de l'application.
-    </p>
+    <p>Les communications réseau passent par HTTPS. Le cœur de l'application (événements, calcul des dettes, scan) fonctionne sans réseau.</p>
   </section>
-
   <section>
-    <h2>4. Publicité — Google AdMob</h2>
-    <p>
-      L'application intègre le SDK Google AdMob afin d'afficher des publicités récompensées.
-      AdMob peut collecter et utiliser les données suivantes conformément à la
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de
-      confidentialité de Google</a> :
-    </p>
+    <h2>10. Partage avec des tiers</h2>
+    <p>Nous ne vendons ni ne louons aucune donnée. Seuls interviennent les prestataires cités ci-dessus : Google (AdMob, Firebase, Play Billing) et Supabase (formulaire « Nous écrire »). Quand vous partagez un récapitulatif, c'est vous qui choisissez l'application et le destinataire.</p>
+  </section>
+  <section>
+    <h2>11. Vos droits</h2>
+    <p>Selon votre lieu de résidence (notamment RGPD), vous pouvez demander l'accès, la rectification, l'effacement ou l'opposition au traitement de vos données, et retirer votre consentement à tout moment. Pour les données traitées par Google : <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">myaccount.google.com/data-and-privacy</a>. Pour tout le reste : <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>.</p>
+  </section>
+  <section>
+    <h2>12. Conservation et enfants</h2>
+    <p>Les données locales restent sur l'appareil jusqu'à leur suppression ou la désinstallation. Split&amp;Go ne s'adresse pas aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant.</p>
+  </section>
+  <section>
+    <h2>13. Modifications et contact</h2>
+    <p>La date de mise à jour en haut de page est actualisée à chaque changement substantiel. Questions : <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>.</p>
+  </section>
+</main>
+<main id="en" lang="en">
+  <section>
+    <h2>1. Overview</h2>
+    <p>Split&amp;Go is an Android app for sharing expenses, published by an independent developer (the "publisher"). This policy explains what data is involved, how it is used and your rights.</p>
+    <div class="highlight"><strong>Core principle:</strong> your events, participants and expenses stay <strong>100% on your device</strong>. The app has no account and no server of ours, and never sends us this data.</div>
+    <p>Contact: <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a></p>
+  </section>
+  <section>
+    <h2>2. Data stored on your device</h2>
+    <p>Stored locally (Room/SQLite database, DataStore) and never transmitted:</p>
     <ul>
-      <li>Identifiant publicitaire Android (AAID)</li>
-      <li>Adresse IP (pour la localisation approximative)</li>
-      <li>Informations sur l'appareil (modèle, version Android, langue)</li>
-      <li>Données d'interaction avec les publicités (clics, impressions)</li>
+      <li><strong>Events</strong>: name, date, currency</li>
+      <li><strong>Participants</strong>: first names</li>
+      <li><strong>Expenses</strong>: title, amount, payer, beneficiaries, optional receipt photo</li>
+      <li><strong>Payment details</strong> entered in settings (IBAN, PayPal, Lydia, Revolut, Wero…): kept locally and inserted in the messages you choose to share</li>
+      <li><strong>Preferences</strong>: palette, message tone, unlocked items</li>
     </ul>
-    <p>
-      Conformément au RGPD, un bandeau de consentement vous est présenté au premier lancement.
-      Vous pouvez modifier votre choix à tout moment depuis les
-      <strong>Paramètres → Publicités</strong>.
-    </p>
+    <p>This data is erased if you uninstall the app or delete the items concerned. The publisher holds no copy.</p>
   </section>
-
   <section>
-    <h2>5. Achats in-app — Google Play Billing</h2>
-    <p>
-      L'application propose des dons et un abonnement mensuel via Google Play Billing.
-      Les transactions sont entièrement gérées par Google Play. Nous ne recevons ni ne
-      stockons aucune information de paiement (coordonnées bancaires, numéro de carte…).
-    </p>
-    <p>
-      Pour consulter vos achats ou gérer votre abonnement, rendez-vous dans
-      <strong>Google Play → Abonnements et achats</strong>.
-    </p>
+    <h2>3. Camera, receipt photos and text recognition</h2>
+    <div class="highlight">Receipts are read <strong>on your device</strong> by Google ML Kit (model bundled in the app). No image or recognised text is sent anywhere.</div>
+    <p>The camera permission is used only to photograph a receipt (you can also import an image from your gallery). The photo is first placed in the app cache; if you save the expense, it is copied to the app's internal storage (not accessible to other apps) and deleted with the expense. You can refuse or revoke the permission at any time in Android settings.</p>
   </section>
-
   <section>
-    <h2>6. Données non collectées</h2>
-    <p>Split&amp;Go <strong>ne collecte pas</strong> :</p>
+    <h2>4. Crash reports — Firebase Crashlytics</h2>
+    <p>If the app crashes, Firebase Crashlytics (Google) receives a technical report: stack trace, device model, Android and app versions, memory state, an installation identifier. None of the data you enter (events, names, amounts) is included. You can turn this off in the app settings.</p>
+  </section>
+  <section>
+    <h2>5. Usage statistics — Firebase Analytics</h2>
+    <p>The app may send anonymous usage statistics to Firebase Analytics (screens opened, features used, participant-count ranges, palette or tone chosen, scan outcome). <strong>None of the data you enter</strong> (names, amounts, titles, receipt text) is sent. In the European Economic Area, the UK and Switzerland, measurement is enabled only with your consent; you can turn it off at any time in settings.</p>
+  </section>
+  <section>
+    <h2>6. Advertising — Google AdMob and consent</h2>
+    <p>A banner and optional rewarded ads (watched in exchange for unlocks) are served by Google AdMob, which may process the Android advertising ID, IP address, device information and ad interaction data under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</p>
+    <p>In the EEA, the UK and Switzerland, a consent message (Google User Messaging Platform) is shown at first launch; you can change your choice at any time from the <strong>Support</strong> page or settings. Premium subscribers see no ads.</p>
+  </section>
+  <section>
+    <h2>7. Purchases — Google Play Billing</h2>
+    <p>Donations and the monthly subscription are processed by Google Play. We never receive or store payment data; the app only knows the status of your purchase. Manage purchases in <strong>Google Play → Payments &amp; subscriptions</strong>.</p>
+  </section>
+  <section>
+    <h2>8. “Contact us” — sending a message</h2>
+    <p>If you use the <strong>Contact us</strong> form in settings, the following is sent to our database hosted by Supabase: the message you write, the app version, the Android version, the device model and the language. No name, e-mail or identifier is attached; do not include personal data in your message if you prefer not to. Messages are used only to reply and improve the app; to request deletion, write to <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>. Nothing is sent until you tap "Send".</p>
+  </section>
+  <section>
+    <h2>9. Android permissions</h2>
     <ul>
-      <li>Votre nom, adresse e-mail ou toute information d'identification personnelle</li>
-      <li>Votre position GPS ou localisation géographique</li>
-      <li>Des données de navigation web</li>
-      <li>Des données de télémétrie ou d'utilisation envoyées à nos serveurs</li>
+      <li><strong>INTERNET</strong> and <strong>ACCESS_NETWORK_STATE</strong> — ads, purchases, crash reports, statistics, "Contact us" form</li>
+      <li><strong>CAMERA</strong> — photographing a receipt (optional, requested on first use)</li>
     </ul>
-    <p>L'application ne dispose d'aucun compte utilisateur et ne nécessite aucune inscription.</p>
+    <p>Network traffic uses HTTPS. The core of the app (events, debt calculation, scanning) works offline.</p>
   </section>
-
   <section>
-    <h2>7. Autorisations Android utilisées</h2>
-    <ul>
-      <li><strong>INTERNET</strong> — chargement des publicités AdMob et traitement des
-          achats Google Play</li>
-      <li><strong>CAMERA</strong> — scan de ticket de caisse via ML Kit (usage optionnel,
-          demandé au moment de la première utilisation)</li>
-    </ul>
+    <h2>10. Sharing with third parties</h2>
+    <p>We do not sell or rent any data. Only the providers named above are involved: Google (AdMob, Firebase, Play Billing) and Supabase ("Contact us" form). When you share a summary, you choose the app and the recipient.</p>
   </section>
-
   <section>
-    <h2>8. Sécurité des communications</h2>
-    <p>
-      Toutes les communications réseau de l'application (AdMob, consentement RGPD, Google Play
-      Billing) s'effectuent exclusivement via <strong>HTTPS</strong>. Le trafic HTTP non
-      chiffré est interdit par la configuration de sécurité réseau de l'application.
-    </p>
-    <p>
-      Le cœur de l'application (gestion des événements, calcul des dettes, scan de ticket)
-      fonctionne entièrement sans accès réseau.
-    </p>
+    <h2>11. Your rights</h2>
+    <p>Depending on where you live (including under the GDPR) you may request access, correction, erasure or objection regarding your data, and withdraw consent at any time. For data processed by Google: <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">myaccount.google.com/data-and-privacy</a>. For anything else: <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>.</p>
   </section>
-
   <section>
-    <h2>9. Partage des données avec des tiers</h2>
-    <p>
-      Nous ne vendons, ne louons et ne partageons vos données personnelles avec aucun tiers,
-      à l'exception des données publicitaires transmises à Google AdMob (section 4) et des
-      données de transaction gérées par Google Play Billing (section 5).
-    </p>
+    <h2>12. Retention and children</h2>
+    <p>Local data stays on the device until you delete it or uninstall. Split&amp;Go is not directed at children under 13 and knowingly collects no data about them.</p>
   </section>
-
   <section>
-    <h2>10. Vos droits (RGPD)</h2>
-    <p>
-      Si vous résidez dans l'Espace économique européen, vous disposez des droits suivants
-      concernant vos données personnelles traitées par Google AdMob :
-    </p>
-    <ul>
-      <li>Droit d'accès, de rectification et d'effacement</li>
-      <li>Droit d'opposition au traitement à des fins publicitaires</li>
-      <li>Droit à la portabilité des données</li>
-      <li>Droit de retirer votre consentement à tout moment</li>
-    </ul>
-    <p>
-      Pour exercer ces droits concernant les données Google, rendez-vous sur
-      <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">
-      myaccount.google.com/data-and-privacy</a>.
-      Pour toute demande relative à l'application, contactez-nous à
-      <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>.
-    </p>
+    <h2>13. Changes and contact</h2>
+    <p>The update date at the top of the page is refreshed on every substantial change. Questions: <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>.</p>
   </section>
-
-  <section>
-    <h2>11. Conservation des données</h2>
-    <p>
-      Les données locales (événements, participants, dépenses, préférences) sont conservées sur
-      votre appareil jusqu'à ce que vous les supprimiez manuellement ou que vous désinstalliez
-      l'application. Aucune copie n'est conservée par l'éditeur.
-    </p>
-  </section>
-
-  <section>
-    <h2>12. Enfants</h2>
-    <p>
-      Split&amp;Go n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas
-      sciemment de données personnelles concernant des mineurs.
-    </p>
-  </section>
-
-  <section>
-    <h2>13. Modifications de cette politique</h2>
-    <p>
-      Nous nous réservons le droit de mettre à jour cette politique de confidentialité. En cas de
-      modification substantielle, la date de « dernière mise à jour » en haut de cette page sera
-      actualisée. Nous vous encourageons à consulter cette page périodiquement.
-    </p>
-  </section>
-
-  <section>
-    <h2>14. Contact</h2>
-    <p>
-      Pour toute question relative à cette politique de confidentialité :
-      <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>
-    </p>
-  </section>
-
 </main>
 
 <footer>
-  &copy; 2026 Split&amp;Go &mdash; Tous droits réservés
+  &copy; 2026 Split&amp;Go &mdash; Tous droits réservés / All rights reserved
 </footer>
 
 </body>
